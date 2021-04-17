@@ -1,0 +1,105 @@
+#landscape {
+    background-color: rgb(54, 54, 196);
+
+    background-image: url(img/img.jpg);
+    
+    
+    
+    background-repeat: no-repeat;
+
+    
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#snow {
+   /* background-color: blueviolet; */
+    
+}
+
+#snow .flake {
+    top: -10%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.726);
+    /*border:  1px solid crimson; */
+    border-radius: 100%;
+    position: absolute;
+    animation: fall 10s linear infinite;
+}
+
+#snow .flake.md {
+    animation: fall 15s linear infinite;
+    width: 6px;
+    height: 6px;
+}
+
+#snow .flake:nth-child(1) {
+    left: 15%;
+    animation-delay: 5s;
+}
+
+#snow .flake:nth-child(2) {
+    left: 60%;
+    animation-delay: 2.5s;
+}
+#snow .flake:nth-child(3) {
+    left: 55%;
+    animation-delay: 1s;
+}
+#snow .flake:nth-child(4) {
+    left: 25%;
+    animation-delay: 2.3s;
+}
+
+#snow .flake.md:nth-child(5) {
+    left: 10%;
+    animation-delay: 4.6s;
+}
+
+#snow .flake.md:nth-child(6) {
+    left: 80%;
+    animation-delay: 0.7s;
+}
+
+#snow .flake.md:nth-child(7) {
+    left: 56%;
+    animation-delay: 6s;
+}
+
+#snow .flake.md:nth-child(8) {
+    left: 90%;
+    animation-delay: 1.4s;
+}
+
+#snow .flake.md:nth-child(9) {
+    left: 40%;
+    animation-delay: 5s;
+}
+
+#snow .flake.md:nth-child(10) {
+    left: 40%;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes fall {
+    /*hw q - -10% at the top ,100% bottom */
+    /* координаты заканчиваются в родительском элементе*/
+    from { top: -10%}
+    to   { top: 100%}
+
+}
+/*
+hw add more flakes 
+gradients
+add small and slower
+radial gradient
+add layer on top + h1 lorem ipsum +form */
